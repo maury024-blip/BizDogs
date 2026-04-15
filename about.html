@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>About BizDogs | UMD Labovitz School of Business and Economics</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Work+Sans:wght@400;500&family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "primary": "#51000d",
+                "primary-container": "#7a0019",
+                "secondary": "#755b00",
+                "secondary-container": "#fecb32",
+                "background": "#fcf9f8",
+                "on-surface": "#1b1c1c",
+                "on-surface-variant": "#584141",
+                "surface-container-low": "#f6f3f2"
+            },
+            "fontFamily": {
+                "headline": ["Manrope"],
+                "body": ["Work Sans"],
+                "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+      body { min-height: 100dvh; }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+
+<header class="fixed top-0 w-full z-50 bg-[#fcf9f8]/80 backdrop-blur-md flex justify-between items-center px-6 py-4 border-b border-outline-variant/10">
+    <div class="flex items-center gap-4">
+        <span class="text-xl font-black text-[#51000d] uppercase tracking-tighter font-headline">BizDogs</span>
+    </div>
+    
+    <nav class="hidden md:flex gap-6 items-center">
+        <a class="font-headline text-xs font-bold uppercase tracking-widest text-stone-600 hover:text-[#51000d] transition-all" href="index.html">Home</a>
+        
+        <a class="font-headline text-xs font-black uppercase tracking-widest text-[#51000d] border-b-2 border-[#755b00] pb-1" href="about.html">About Us</a>
+        
+        <a class="font-headline text-xs font-bold uppercase tracking-widest text-stone-600 hover:text-[#51000d] transition-all" href="events.html">Events</a>
+        
+        <a class="font-headline text-xs font-bold uppercase tracking-widest text-stone-600 hover:text-[#51000d] transition-all" href="join.html">Join Us</a>
+        
+        <a class="font-headline text-xs font-bold uppercase tracking-widest text-stone-600 hover:text-[#51000d] transition-all" href="contact.html">Contact Us</a>
+    </nav>
+
+    <div class="flex items-center gap-4">
+      
+    </div>
+</header>
+
+<main class="pt-20">
+    <section class="relative px-6 py-24 bg-primary text-white overflow-hidden text-center">
+        <div class="absolute inset-0 bg-gradient-to-br from-primary to-primary-container opacity-90"></div>
+        <div class="relative z-10 max-w-4xl mx-auto">
+            <span class="font-label text-xs uppercase tracking-widest text-secondary-container mb-4 block"></span>
+            <h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tight mb-6">About Our Pack.</h1>
+            <p class="text-xl text-white/80 leading-relaxed">Discover the mission, the people, and the community driving professional excellence at UMD.</p>
+        </div>
+    </section>
+
+    <section class="py-24 px-6">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+            <div class="space-y-6">
+                <span class="font-label text-xs uppercase tracking-widest text-primary font-bold block"></span>
+                <h2 class="font-headline text-4xl font-bold text-primary">What We Do</h2>
+                <div class="w-20 h-1.5 bg-secondary rounded-full"></div>
+                <p class="text-lg text-on-surface-variant leading-relaxed">
+                    <ul class="list-disc pl-5 space-y-3 font-body text-on-surface-variant">
+    <li>We hold regular group meetings focusing on professional development.</li>
+    <li>We often have guest speakers, such as BizDog alumni and local business owners, to build skills and provide valuable insight.</li>
+    <li>We perform community service projects.</li>
+    <li>We conduct site visits to local businesses.</li>
+    <li>We host many social events and gatherings to build a strong community.</li>
+</ul>
+                </p>
+                
+            </div>
+            <div class="rounded-3xl overflow-hidden shadow-2xl">
+                <img src="BizDog Images/BizDogs Group.jpg" class="w-full h-full object-cover" alt="Students in a professional workshop setting">
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 bg-surface-container-low">
+        <div class="max-w-7xl mx-auto text-center mb-16">
+            <h2 class="font-headline text-4xl font-bold text-primary">Member Testimonials</h2>
+            <p class="text-on-surface-variant mt-4">Hear from the students currently leading the pack.</p>
+        </div>
+        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-10 rounded-3xl shadow-sm border-b-4 border-secondary">
+                <span class="material-symbols-outlined text-secondary-container text-4xl mb-4">format_quote</span>
+                <p class="text-lg italic text-on-surface-variant mb-6">"Being a part of the BizDogs LLC has been an incredible experience that has helped me grow as a business student, both personally and professionally." </p>
+                <div class="font-bold text-primary">Sam Ashby</div>
+                <div class="text-xs uppercase tracking-widest text-stone-400"> 2025-2026 BizDog Cohort</div>
+            </div>
+           
+               <div class="bg-white p-10 rounded-3xl shadow-sm border-b-4 border-primary">
+                <span class="material-symbols-outlined text-primary text-4xl mb-4">format_quote</span>
+                <p class="text-lg italic text-on-surface-variant mb-6">"My name is Caleb Cooley, and I am a Marketing/ Graphic Design major at UMD. I joined BizDogs to build connections within LSBE and surround myself with people who share my interest in business. I highly recommend BizDogs to any incoming business students because the personal relationships you build with both students and faculty provide a foundation that will help you excel at UMD."</p>
+                <div class="font-bold text-primary">Caleb Cooley</div>
+                <div class="text-xs uppercase tracking-widest text-stone-400">2025-2026 BizDog Cohort</div>
+            </div>
+        </div>
+    </section>
+
+ <section class="py-24 px-6">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="font-headline text-4xl font-bold text-primary">The Leadership Team</h2>
+            <p class="text-on-surface-variant mt-4">The dedicated board members serving the UMD BizDogs.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="text-center">
+                <div class="aspect-[410/510] w-full rounded-2xl overflow-hidden mb-6 shadow-lg border-2 border-primary/5">
+                    <img src="BizDog Images/BizDogs President2.png" class="w-full h-full object-contain" alt="President">
+                </div>
+            </div>
+            <div class="text-center">
+                <div class="aspect-[410/510] w-full rounded-2xl overflow-hidden mb-6 shadow-lg border-2 border-primary/5">
+                    <img src="BizDog Images/BizDogs Vice President2.png" class="w-full h-full object-contain" alt="Vice President">
+                </div>
+            </div>
+            <div class="text-center">
+                <div class="aspect-[410/510] w-full rounded-2xl overflow-hidden mb-6 shadow-lg border-2 border-primary/5">
+                    <img src="BizDog Images/BizDogs Treasurer2.png" class="w-full h-full object-contain" alt="Treasurer">
+                </div>
+            </div>
+            <div class="text-center">
+                <div class="aspect-[410/510] w-full rounded-2xl overflow-hidden mb-6 shadow-lg border-2 border-primary/5">
+                    <img src="BizDog Images/BizDogs Secretary2.png" class="w-full h-full object-contain" alt="Secretary">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+<footer class="bg-primary text-white py-12 px-6 mt-24">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+        <div class="text-2xl font-black font-headline tracking-tighter">BIZDOGS</div>
+        <nav class="flex gap-8">
+            <a class="font-label text-xs uppercase tracking-widest text-white/50 hover:text-secondary-container transition-all" href="#">Contact</a>
+            <a class="font-label text-xs uppercase tracking-widest text-white/50 hover:text-secondary-container transition-all" href="#">Privacy</a>
+            <a class="font-label text-xs uppercase tracking-widest text-white/50 hover:text-secondary-container transition-all" href="#">UMD Home</a>
+        </nav>
+        <div class="text-white/30 text-[10px] uppercase tracking-widest">
+            © 2026 University of Minnesota Duluth
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,269 @@
+/* ==========================================================================
+   CSS Variables & Reset
+   ========================================================================== */
+:root {
+    --bg-dark: #0A0F1D;
+    --surface-dark: rgba(20, 27, 45, 0.7);
+    --surface-border: rgba(255, 255, 255, 0.1);
+    --accent-cyan: #00F0FF;
+    --accent-cyan-glow: rgba(0, 240, 255, 0.3);
+    --accent-purple: #8A2BE2;
+    --text-main: #F8F9FA;
+    --text-muted: #94A3B8;
+    
+    --font-sans: 'Inter', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* ==========================================================================
+   Typography & Utilities
+   ========================================================================== */
+h1, h2, h3, h4 {
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.accent-text {
+    color: var(--accent-cyan);
+    text-shadow: 0 0 10px var(--accent-cyan-glow);
+}
+
+.text-muted { color: var(--text-muted); }
+.w-100 { width: 100%; }
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-padding { padding: 5rem 0; }
+.section-title { margin-bottom: 3rem; font-size: 2.5rem; }
+
+/* Grid Layouts */
+.grid-2-col { display: grid; grid-template-columns: 1fr; gap: 2rem; }
+.grid-3-col { display: grid; grid-template-columns: 1fr; gap: 2rem; }
+
+@media (min-width: 768px) {
+    .grid-2-col { grid-template-columns: 1fr 1fr; }
+    .grid-3-col { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* ==========================================================================
+   Components (Glassmorphism, Buttons, Badges)
+   ========================================================================== */
+.glass-nav {
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    background: rgba(10, 15, 29, 0.8);
+    border-bottom: 1px solid var(--surface-border);
+    z-index: 100;
+    padding: 1rem 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-links a {
+    color: var(--text-main);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover { color: var(--accent-cyan); }
+
+.glass-card {
+    background: var(--surface-dark);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--surface-border);
+    border-radius: 12px;
+    padding: 2rem;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0, 240, 255, 0.5);
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    font-family: var(--font-sans);
+}
+
+.btn-primary {
+    background: var(--accent-cyan);
+    color: var(--bg-dark);
+    box-shadow: 0 0 15px var(--accent-cyan-glow);
+}
+
+.btn-primary:hover { box-shadow: 0 0 25px var(--accent-cyan); }
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid var(--accent-cyan);
+    color: var(--accent-cyan);
+}
+
+.btn-outline:hover { background: rgba(0, 240, 255, 0.1); }
+
+.badge {
+    background: rgba(138, 43, 226, 0.2);
+    color: #DDA0DD;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-family: var(--font-mono);
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+/* ==========================================================================
+   Forms & Specific Page Styles
+   ========================================================================== */
+.form-centered { max-width: 600px; margin: 0 auto; }
+
+.form-group { margin-bottom: 1.5rem; }
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+input {
+    width: 100%;
+    padding: 0.8rem;
+    background: rgba(0,0,0,0.2);
+    border: 1px solid var(--surface-border);
+    border-radius: 6px;
+    color: var(--text-main);
+    font-family: var(--font-sans);
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--accent-cyan);
+}
+
+.form-error {
+    color: #FF4C4C;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    display: none;
+}
+
+/* Filter Buttons */
+.filter-group {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background: transparent;
+    border: 1px solid var(--surface-border);
+    color: var(--text-muted);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.filter-btn.active, .filter-btn:hover {
+    border-color: var(--accent-cyan);
+    color: var(--accent-cyan);
+}
+
+/* Hero Section Container */
+.hero {
+    /* Replace 'hero-bg.jpg' with your actual image file */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('hero-bg.jpg') no-click center center/cover;
+    height: 70vh; /* Takes up 70% of the screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 0 20px;
+}
+
+/* Hero Main Title */
+.hero h1 {
+    font-size: clamp(2.5rem, 8vw, 4rem); /* Scales text based on screen size */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Hero Subtitle */
+.hero p {
+    font-size: 1.25rem;
+    max-width: 700px;
+    margin-bottom: 35px;
+    line-height: 1.6;
+}
+
+/* Hero Button Style */
+.hero-btn {
+    background-color: #FFD700; /* Gold */
+    color: #800000; /* Maroon */
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    border: 2px solid #FFD700;
+}
+
+/* Button Hover Effect */
+.hero-btn:hover {
+    background-color: transparent;
+    color: #FFD700;
+    transform: translateY(-3px);
+}
+

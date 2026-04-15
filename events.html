@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Events | BizDogs Program</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700;800&family=Work+Sans:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#51000d",
+                        "primary-container": "#7a0019",
+                        "secondary": "#755b00",
+                        "secondary-container": "#fecb32",
+                        "background": "#fcf9f8",
+                        "on-surface": "#1b1c1c",
+                        "on-surface-variant": "#584141",
+                        "surface-container-low": "#f6f3f2"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Work Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        body { min-height: 100dvh; }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body">
+
+<header class="fixed top-0 w-full z-50 bg-[#fcf9f8]/80 backdrop-blur-md flex justify-between items-center px-6 py-4 border-b border-outline-variant/10">
+    <div class="flex items-center gap-4">
+        <span class="text-xl font-black text-[#51000d] uppercase tracking-tighter font-headline">BizDogs</span>
+    </div>
+    
+    <nav class="hidden md:flex gap-6 items-center">
+        <a class="font-headline text-xs font-bold uppercase tracking-widest text-stone-600 hover:text-[#51000d] transition-all" href="index.html">Home</a>
+        
+        <a class="font-headline text-xs font-bold uppercase tracking-widest text-stone-600 hover:text-[#51000d] transition-all" href="about.html">About Us</a>
+        
+        <a class="font-headline text-xs font-black uppercase tracking-widest text-[#51000d] border-b-2 border-[#755b00] pb-1" href="events.html">Events</a>
+        
+        <a class="font-headline text-xs font-bold uppercase tracking-widest text-stone-600 hover:text-[#51000d] transition-all" href="join.html">Join Us</a>
+        
+        <a class="font-headline text-xs font-bold uppercase tracking-widest text-stone-600 hover:text-[#51000d] transition-all" href="contact.html">Contact Us</a>
+    </nav>
+
+    <div class="flex items-center gap-4">
+       
+    </div>
+</header>
+
+<main class="pt-24">
+    <section class="px-6 lg:px-24 py-16 bg-primary text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-primary to-primary-container opacity-90"></div>
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <span class="font-label text-sm font-bold text-secondary-container uppercase tracking-[0.2em] block mb-4"></span>
+            <h1 class="font-headline text-5xl md:text-7xl font-extrabold leading-tight tracking-tight mb-8">
+                Upcoming <span class="text-secondary-container">Events</span>
+            </h1>
+            <p class="text-xl text-white/80 mb-10">Never miss a workshop, guest speaker, or networking opportunity. View our live calendar to sync with your schedule.</p>
+            
+            <a href="https://lsbe.d.umn.edu/events" target="_blank" class="inline-flex items-center gap-3 bg-secondary-container text-primary px-10 py-5 rounded-2xl font-headline font-black text-lg shadow-2xl hover:scale-105 transition-all uppercase tracking-widest">
+                <span class="material-symbols-outlined">calendar_month</span>
+                View Events Calendar
+            </a>
+        </div>
+    </section>
+
+    <section class="px-6 lg:px-24 py-20 bg-surface">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex items-center gap-4 mb-6">
+                <div class="w-16 h-1.5 bg-secondary rounded-full"></div>
+                <h2 class="font-headline text-4xl font-bold text-primary">BizDog Events</h2>
+            </div>
+            <p class="text-lg text-on-surface-variant leading-relaxed mb-8">
+                The BizDogs have a variety of events, including networking events, visiting local businesses, inviting guest speakers to talk at meetings, community service, and many other events that help students gain professional experience. Click the Events Calendar button above to view upcoming BizDog events, as well as other LSBE events.
+            </p>
+            
+               
+            </div>
+        </div>
+    </section>
+
+    <section class="px-6 lg:px-24 py-20 bg-surface-container-low">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="font-headline text-4xl font-bold text-primary mb-12">Previous Events</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all group">
+                    <div class="aspect-video bg-stone-200 overflow-hidden">
+                        <img src="BizDog Images/BizDogs Chum Volunteers.png" alt="Past event photo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-8">
+                        <span class="font-label text-[10px] font-bold text-secondary uppercase tracking-widest"></span>
+                        <h3 class="font-headline text-xl font-bold text-primary mt-2 mb-4">BizDogs CHUM Event</h3>
+                        <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                            CHUM is a non-profit organization that dedicated to helping the homeless and people in poverty.
+                        </p>
+                        <div class="h-px w-full bg-stone-100 mb-6"></div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all group">
+                    <div class="aspect-video bg-stone-200 overflow-hidden">
+                        <img src="BizDog Images/BizDogs Essentia Health Tour.png" alt="Past event photo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-8">
+                        <span class="font-label text-[10px] font-bold text-secondary uppercase tracking-widest"></span>
+                        <h3 class="font-headline text-xl font-bold text-primary mt-2 mb-4">Essentia Health Tour</h3>
+                        <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                            BizDogs visit a variety of businesses around Duluth, including the Essentia Health Clinic.
+                        </p>
+                        <div class="h-px w-full bg-stone-100 mb-6"></div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all group">
+                    <div class="aspect-video bg-stone-200 overflow-hidden">
+                        <img src="BizDog Images/BizDogs Networking Event.png" alt="Past event photo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-8">
+                        <span class="font-label text-[10px] font-bold text-secondary uppercase tracking-widest"></span>
+                        <h3 class="font-headline text-xl font-bold text-primary mt-2 mb-4">BizDogs Networking Event</h3>
+                        <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                          The BizDogs met with business professionals to build relationships and get guidance and mentorship.
+                        </p>
+                        <div class="h-px w-full bg-stone-100 mb-6"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-primary text-white py-12 px-6 mt-24">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+        <div class="text-2xl font-black font-headline tracking-tighter">BIZDOGS</div>
+        <nav class="flex gap-8">
+            <a class="font-label text-xs uppercase tracking-widest text-white/50 hover:text-secondary-container transition-all" href="#">Contact</a>
+            <a class="font-label text-xs uppercase tracking-widest text-white/50 hover:text-secondary-container transition-all" href="#">Privacy</a>
+            <a class="font-label text-xs uppercase tracking-widest text-white/50 hover:text-secondary-container transition-all" href="#">UMD Home</a>
+        </nav>
+        <div class="text-white/30 text-[10px] uppercase tracking-widest">
+            © 2026 University of Minnesota Duluth
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
